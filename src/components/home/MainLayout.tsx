@@ -20,7 +20,13 @@ const MainLayout: React.FC = () => {
   } = theme.useToken();
 
   return (
-    <Layout style={{ minHeight: "100vh" }}>
+    <Layout
+      style={{
+        minHeight: "100vh",
+        backgroundImage: "url(/assets/sky.jpg)",
+        backgroundColor: "transparent",
+      }}
+    >
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical" />
         <Menu
